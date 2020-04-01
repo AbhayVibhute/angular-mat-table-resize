@@ -19,7 +19,7 @@
                 </button>
             </div>
             <input type="text" [(ngModel)]="test"> {{test}} -->
-            <div class="m-5">profile</div>
+            <div class="m-2">profile</div>
             <mat-table [dataSource]="dataSource" class="mat-elevation-z8" style="font-size:11px" cdkDropListGroup>
                 <ng-container *ngFor="let column of columns; let i = index" [matColumnDef]="column.field">
                     <mat-header-cell style="text-align: left;" *matHeaderCellDef (mousedown)="onResizeColumn($event, i)">
